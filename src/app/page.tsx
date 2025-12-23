@@ -108,9 +108,9 @@ const About = () => (
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             {/* Placeholder Image - Ganti dengan foto asli FunPark nanti */}
             <img 
-              src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=1000&auto=format&fit=crop" 
-              alt="Anak-anak bermain air" 
-              className="w-full h-auto object-cover" 
+              src="/kolam-utama.jpg"  // <-- GANTI INI sesuai nama file kamu di folder public
+              alt="Suasana Kolam Renang FunPark BTR"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
