@@ -108,10 +108,17 @@ const About = () => (
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             {/* Placeholder Image - Ganti dengan foto asli FunPark nanti */}
             <img 
-              src="/kolam-utama.jpg"  // <-- GANTI INI sesuai nama file kamu di folder public
-              alt="Suasana Kolam Renang FunPark BTR"
-              className="w-full h-auto object-cover"
-            />
+      src="/kolam-utama.jpg" 
+      alt="Suasana Kolam Renang FunPark BTR" 
+      /* Tambahkan class 'blur-[2px]' untuk efek buram halus.
+         Gunakan 'brightness-75' atau 'brightness-90' agar gambar agak gelap,
+         sehingga tidak terlalu kontras dengan background.
+      */
+      className="w-full h-auto object-cover blur-[2px] brightness-90 scale-110" 
+    />
+    
+    {/* Opsional: Tambah overlay warna biru transparan di atasnya */}
+    <div className="absolute inset-0 bg-blue-900/20 mix-blend-overlay"></div>
           </div>
         </div>
         <div>
